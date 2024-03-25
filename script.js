@@ -39,6 +39,14 @@ let currentIndex = 0;
 function updateFlashcard() {
   let content = document.getElementById("content");
   let counter = document.getElementById("counter");
+  let image = document.getElementById("image");
+
+  if(currentIndex===0){
+    image.style.display = "block"; // 이미지 표시
+  }
+  else {
+    image.style.display = "none";
+  }
 
   if (currentIndex === 0 || currentIndex === flashcardContents.length - 1) {
       counter.innerText = ""; // 시작과 끝에서는 번호를 표시하지 않음
