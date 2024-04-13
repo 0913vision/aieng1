@@ -2,15 +2,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   margin: 0;
   background-color: white;
   padding: 20px;
+  flex-direction: column;
 }
 
 #flashcard {
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,4 +42,8 @@ body {
   height: auto;
   margin-top: 20px;
   padding-bottom: 20%; /* 글자와의 여백 */
+}
+
+#secret {
+  display: none;
 }

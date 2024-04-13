@@ -272,6 +272,8 @@ function updateFlashcard() {
   let content = document.getElementById("content");
   let counter = document.getElementById("counter");
   let image = document.getElementById("image");
+  let secret = document.getElementById("secret");
+
 
   if(currentIndex===0){
     image.style.display = "block"; // 이미지 표시
@@ -293,6 +295,13 @@ function updateFlashcard() {
   }
   else {
     content.innerText = flashcardContents[currentIndex];
+  }
+
+  if(currentIndex == 15) {
+    secret.style.display = "block";
+  }
+  else {
+    secret.style.display = "none";
   }
 }
 
